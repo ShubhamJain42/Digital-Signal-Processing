@@ -1,0 +1,50 @@
+//Generation of Sine Signal:
+#include<stdio.h>
+#include<math.h>
+
+float arr[100];
+int main(void){
+	int i;
+	for(i=0;i<100;i++){
+		arr[i] = sin((2*3.14*i)/100);
+		}
+       return 0;
+ }
+
+
+//Generation of Triangular Signal:
+        
+#include<stdio.h>
+#include<math.h>
+
+float arr[200];
+int main(void) {
+	int i;
+              for(i=0;i<50;i++){
+			arr[i] = 1*i;
+			}
+	 for(i=50;i<100;i++){
+			arr[i] = (-1)*i+100;
+			}
+        for(i=100;i<200;i++){
+			arr[i] = -(arr[i-100]);
+			}
+        return 0;
+}
+
+//Generation of Square Signal:
+
+#include<stdio.h>
+#include<math.h>
+
+float arr[200];
+int main (void) {
+      int i;
+      for(i=0;i<50;i++){
+	       arr[i] = 1;
+		   arr[i+50]=0;
+		   arr[i+100]=1;
+		   arr[i+150]=0;
+		   }
+	return 0;
+}

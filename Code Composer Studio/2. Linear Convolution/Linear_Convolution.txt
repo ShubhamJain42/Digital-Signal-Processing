@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+
+int x[4]={1,2,3,4};
+int h[4]={1,2,3,4};
+int y[7]={0,0,0,0,0,0,0};
+int i,j;
+
+void main(){
+	for(i=0;i<4;i++)
+		for(j=0;j<4;j++)
+			y[i+j]+=x[i]*h[j];
+
+}

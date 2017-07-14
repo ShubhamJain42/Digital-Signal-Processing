@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int y[4];
+int main() {
+      int x[4] = {1,2,3,4};
+      int h[4] = {0,1,2,3};
+      int i=0,j=0;
+      for(i=0;i<4;i++){
+	           y[i] = 0;
+      }
+
+      for (i=0;i<4;i++){
+		for(j=0;j<4;j++){
+			if((i-j)>=0)
+		           y[i] = y[i]+x[j]*h[i-j]; /* y(n)=circ_conn{x(n),h(n)}
+			else
+			     y[i] = y[i]+x[j]*h[i-j+4]; /* y(n)={16,18,16,10}
+	           }
+      }
+      return 0 ;
+}
